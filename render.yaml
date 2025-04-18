@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: goldai-cron
+    schedule: "0 3 * * *"  # 每天台灣時間 11:00（UTC+8 = 03:00）
+    runtime: python
+    buildCommand: ""
+    startCommand: "python main.py"
